@@ -1,0 +1,95 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    min-width: 1200px;
+    margin: 0  auto;
+    padding: 0 15px;
+}
+.row{
+    display: flex;
+    justify-content: space-between
+}
+.card{
+    width: 30%;
+    padding: 150px 10px 10px;
+    padding-top: 250px;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: multiply;
+    transition: 3s;
+    color: #fff;
+}
+.card-1{
+    background-image: url(../img/gardens.png);
+}
+.card-2{
+    background-image: url(../img/carddd.png)
+}
+.card-3{
+    background-image: url(../img/forest.png);
+}
+.card:hover{
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 3s;
+}
+.card:hover .card-info{
+    visibility: visible;
+    opacity: 1;
+}
+.text{
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover .text{
+    visibility: visible;
+    transition: 3s;
+    opacity: 1;
+}
+.btn{
+    text-decoration: none;
+    color: rgb(255, 1, 1);
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(243, 159, 98);
+}
+
+
+
+.text29::before{
+    content:"!!!!!";
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(234, 0, 0);
+    color: #fff;
+}
+.text29::after{
+    content: "\1F494";
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 25px;
+    display: inline-block;
+    background-color: rgb(92, 249, 1);
+    color: #fff;
+}
